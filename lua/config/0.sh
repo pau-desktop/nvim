@@ -1,1 +1,1 @@
-# This is the directory for non plugin configuration
+# This is the directory for the configuration (no plugins)
