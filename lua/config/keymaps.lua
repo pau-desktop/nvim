@@ -9,19 +9,11 @@ vim.keymap.set("n", "n", "nzzzv") -- Center view
 vim.keymap.set("n", "N", "Nzzzv") -- Center view
 vim.keymap.set("n", "Q", "<nop>") -- Disable Q
 vim.keymap.set("i", "<C-c>", "<Esc>") -- Replicate <Esc>
-                                                                                
--- Buffer management                                                            
-vim.keymap.set("n", "<leader>q", "<cmd>bd!<CR>", { desc = "[Q]uit buffer" })    
+
+-- Buffer management
+vim.keymap.set("n", "<leader>q", "<cmd>bd!<CR>", { desc = "[Q]uit buffer" })
 vim.keymap.set("n", "<Tab>", "<cmd>bn!<CR>") -- Buffer next
 vim.keymap.set("n", "<S-Tab>", "<cmd>bp!<CR>") -- Buffer previous
-
--- Split management
-vim.keymap.set("n", "<leader>h", "<cmd>split<CR>", { desc = "[H]orizontal split" })
-vim.keymap.set("n", "<leader>v", "<cmd>vsplit<CR>", { desc = "[V]ertical split" })
-vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Navigate Left" })              
-vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Navigate Down" })              
-vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Navigate Up" })                
-vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Navigate Right" })             
 
 -- Using the void register
 vim.keymap.set("n", "<leader>d", "\"_d", { desc = "[D]elete to void" })
@@ -35,4 +27,3 @@ vim.keymap.set("v", "<", "<gv", { desc = "Indenting" })
 vim.keymap.set("v", ">", ">gv", { desc = "Indenting" })
 vim.keymap.set("i", "jk", "<Esc>", { desc = "Exit Insert Mode" })
 vim.keymap.set("i", "kj", "<Esc>", { desc = "Exit Insert Mode" })
-
